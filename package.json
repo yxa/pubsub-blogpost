@@ -1,0 +1,23 @@
+{
+  "name": "pubsub-blogpost",
+  "version": "0.0.1",
+  "private": "true",
+  "dependencies": {
+    "underscore": "latest"
+  },
+  "devDependencies": {
+    "mocha": "latest",
+    "chai": "latest",
+    "mocha-phantomjs": "latest",
+    "sinon": "latest",
+    "chai-jquery": "latest",
+    "phantomjs": "latest"
+  },
+  "description": "decoupling js apps with pubsub",
+  "scripts": {
+    "test": "node_modules/mocha-phantomjs/bin/mocha-phantomjs test/index.html"
+  },
+  "repository": "",
+  "author": "torbjorn.josefsson@gmail.com",
+  "license": "MIT"
+}
