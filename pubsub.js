@@ -42,12 +42,9 @@ var UI = {
         if (!data) {
             $("#error").show();
         } else {
-            var weather = data.weather[0],
-                displayWeather = "";
+            var weather = data.weather[0];
 
-            template = _.template($("#weather-tmpl").html());
-
-            $("#weather").html(template({
+            $("#weather").html(_.template($("#weather-tmpl").html(), {
                 name: data.name,
                 description: weather.description,
                 speed: data.wind.speed,
